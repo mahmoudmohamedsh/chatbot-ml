@@ -1,0 +1,977 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "Whats up"
+            ],
+            "responses": [
+                "Hello!",
+                "Good to see you again!",
+                "Hi there, how can I help?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "bye",
+                "See you later",
+                "Goodbye",
+                "I am Leaving",
+                "Have a Good day"
+            ],
+            "responses": [
+                "Sad to see you go :(",
+                "Talk to you later",
+                "Goodbye!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "what is your name",
+                "what should I call you",
+                "whats your name?"
+            ],
+            "responses": [
+                "You can call me issac.",
+                "I'm issac!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "gpa",
+            "patterns": [
+                "how to calculate the GPA",
+                "how I can calculate the GPA",
+                "How GPA was calculated"
+            ],
+            "responses": [
+                "GPA = (Grades * Credits)/Total Credits"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "gpa2",
+            "patterns": [
+                "What is the GPA"
+            ],
+            "responses": [
+                "Grade => GPA e A=>3.5 & B=>2.5 & C=>1.5 & D=>1 & F=>0 or A -> Excellent & B -> Very Good & C -> Good & D -> Fair & F -> Fail"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "credithours",
+            "patterns": [
+                "How many credit hours are needed for every level",
+                "How many credit hours are needed to reach the level"
+            ],
+            "responses": [
+                "First level -> less than 32 credit hour , Second level -> from 32 to 64 credit hour , Third level -> from 64 to 96 credit hour , Forth level -> from 96 to 146 credit hour"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "credithours2",
+            "patterns": [
+                "How many hours do I need to specialize in a department?",
+                "Hours required for specialization?",
+                "Number of hours required for specialization?",
+                "When can I specialize?",
+                "How do I specialize in a department?"
+            ],
+            "responses": [
+                "After 32 credit hours, you can specialize"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "specialize",
+            "patterns": [
+                "What are the required materials for the Department of Computer Science?",
+                "How to specialize in computer science?",
+                "What should I study to get into the computer science department?",
+                "What should I study for the computer science department?",
+                "What should I study to enter the Department of Computer Science?",
+                "What are the requirements for entering the Department of Computer Science?"
+            ],
+            "responses": [
+                "You should pass the following subjects:/n1-introduction to algebra (Course Code: Math 110)/n2-Calculus and Analytical Geometry(1) (Subject Code: R 131) & Calculus and Analytical Geometry(2) (Course Code: Math 132)/n3-programming languages (Course Code: Comp 101)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math211",
+            "patterns": [
+                "What is the requirement to register Linear Algebra and Geometry(1) course",
+                "What is the requirement to register Math211",
+                "What is the requirement to register R211",
+                "How can I register Math211",
+                "How can I register R211",
+                "what are the required courses for Math211",
+                "what are the required courses for R211",
+                "what courses needed for Math211",
+                "what courses needed for R211",
+                "What is the requirement for Math211",
+                "What is the requirement for R211"
+            ],
+            "responses": [
+                "You have to succeed in the Introduction to Algebra course (Math110)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math231",
+            "patterns": [
+                "What is the requirement to register Calculus and Analytical Geometry(3) course",
+                "What is the requirement to register Math231",
+                "What is the requirement to register R231",
+                "How can I register Math231",
+                "How can I register R231",
+                "what are the required courses for Math231",
+                "what are the required courses for R231",
+                "what courses needed for Math231",
+                "what courses needed for R231",
+                "What is the requirement for Math231",
+                "What is the requirement for R231"
+            ],
+            "responses": [
+                "You have to succeed in the  Calculus and Analytical Geometry(2) course (Math132)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math271",
+            "patterns": [
+                "What is the requirement to register Newtonian mechanics(2) course",
+                "What is the requirement to register Math271",
+                "What is the requirement to register R271",
+                "How can I register Math271",
+                "How can I register R271",
+                "what are the required courses for Math271",
+                "what are the required courses for R271",
+                "what courses needed for Math271",
+                "what courses needed for R271",
+                "What is the requirement for Math271",
+                "What is the requirement for R271"
+            ],
+            "responses": [
+                "You have to succeed in Newtonian Mechanics(1)  course (Math170)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs201",
+            "patterns": [
+                "What is the requirement to register Object-oriented programming course",
+                "What is the requirement to register Comp201",
+                "What is the requirement to register Cs201",
+                "How can I register Comp201",
+                "How can I register Cs201",
+                "what are the required courses for Comp201",
+                "what are the required courses for Cs201",
+                "what courses needed for Comp201",
+                "what courses needed for Cs201",
+                "What is the requirement for Cs201",
+                "What is the requirement for Comp201"
+            ],
+            "responses": [
+                "You have to succeed in Programming Languages  course (Comp101)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Stat201",
+            "patterns": [
+                "What is the requirement to register Introduction to probability theory course",
+                "What is the requirement to register ٍStat201",
+                "What is the requirement to register S201",
+                "How can I register ٍStat201",
+                "How can I register S201",
+                "what are the required courses for ٍStat201",
+                "what are the required courses for S201",
+                "what courses needed for ٍStat201",
+                "what courses needed for S201",
+                "What is the requirement for ٍStat201",
+                "What is the requirement for S201"
+            ],
+            "responses": [
+                "You have to succeed in  Calculus and Analytical Geometry(2) (Math132)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs202",
+            "patterns": [
+                "What is the requirement to register Object-oriented programming course",
+                "What is the requirement to register Comp202",
+                "What is the requirement to register Cs202",
+                "How can I register Comp202",
+                "How can I register Cs202",
+                "what are the required courses for Comp202",
+                "what are the required courses for Cs202",
+                "what courses needed for Comp202",
+                "what courses needed for Cs202",
+                "What is the requirement for Cs202",
+                "What is the requirement for Comp202"
+            ],
+            "responses": [
+                "You have to succeed in Programming Languages  course (Comp101)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math272",
+            "patterns": [
+                "What is the requirement to register Principles of Analytical mechanics course",
+                "What is the requirement to register Math272",
+                "What is the requirement to register R272",
+                "How can I register Math272",
+                "How can I register R272",
+                "what are the required courses for Math272",
+                "what are the required courses for R272",
+                "what courses needed for Math272",
+                "what courses needed for R272",
+                "What is the requirement for Math272",
+                "What is the requirement for R272"
+            ],
+            "responses": [
+                "You have to succeed in Newtonian Mechanics(1)  course (Math170)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math232",
+            "patterns": [
+                "What is the requirement to register Principles of mathematical analysis course",
+                "What is the requirement to register Math232",
+                "What is the requirement to register R232",
+                "How can I register Math232",
+                "How can I register R232",
+                "what are the required courses for Math232",
+                "what are the required courses for R232",
+                "what are the required courses for Principles of mathematical analysis?",
+                "what courses are needed for Principles of mathematical analysis?",
+                "How can I register  Principles of mathematical analysis ?",
+                "What is the requirement to register Principles of mathematical analysis? ",
+                "What is the requirement to register Principles of mathematical analysis? ",
+                "What is the requirement to register Principles of mathematical analysis course? ",
+                "what courses needed for Math232",
+                "what courses needed for R232",
+                "What is the requirement for Math232",
+                "What is the requirement for R232"
+            ],
+            "responses": [
+                "You have to succeed in Calculus and Analytical Geometry(2) (Math 132)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math213",
+            "patterns": [
+                "What is the requirement to register discrete mathematics course",
+                "What is the requirement to register Math213",
+                "What is the requirement to register R213",
+                "How can I register Math213",
+                "How can I register R213",
+                "What is the requirement to register discrete mathematics",
+                "what are the required courses for Math213",
+                "what are the required courses for R213",
+                "what courses needed for Math213",
+                "what courses needed for R213",
+                "What is the requirement for Math213",
+                "What is the requirement for R213"
+            ],
+            "responses": [
+                "You have to succeed in an introduction to algebra(MATH 110)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math212",
+            "patterns": [
+                "What is the requirement to register Linear Algebra and Geometry(2) course",
+                "What is the requirement to register Math212",
+                "What is the requirement to register R212",
+                "How can I register Math212",
+                "How can I register R212",
+                "what are the required courses for Math212",
+                "what are the required courses for R212",
+                "what courses needed for Math212",
+                "what courses needed for R212",
+                "What is the requirement for Math212",
+                "What is the requirement for R212"
+            ],
+            "responses": [
+                "You have to succeed in Linear Algebra and Geometry(1) (MATH 211)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math241",
+            "patterns": [
+                "What is the requirement to register differential equations course",
+                "What is the requirement to register Math241",
+                "What is the requirement to register R241",
+                "How can I register Math241",
+                "How can I register R241",
+                "what are the required courses for Math241",
+                "what are the required courses for R241",
+                "what courses needed for Math241",
+                "what courses needed for R241",
+                "What is the requirement for Math241",
+                "What is the requirement for R241"
+            ],
+            "responses": [
+                "You have to succeed in Calculus and Analytical Geometry(2) (Math 132)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs302",
+            "patterns": [
+                "What is the requirement to register the computer organization  course",
+                "What is the requirement to register Comp302",
+                "What is the requirement to register Cs302",
+                "How can I register Comp302",
+                "How can I register Cs302",
+                "what are the required courses for Comp302",
+                "what are the required courses for Cs302",
+                "what courses needed for Comp302",
+                "what courses needed for Cs302",
+                "What is the requirement for Comp302",
+                "What is the requirement for Cs302"
+            ],
+            "responses": [
+                "You have to succeed in the Object-oriented programming (OOP) course (Comp201)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs304",
+            "patterns": [
+                "What is the requirement to register the computer Graphics course",
+                "What is the requirement to register Comp304",
+                "What is the requirement to register Cs304",
+                "How can I register Comp304",
+                "How can I register Cs304",
+                "what are the required courses for Comp304",
+                "what are the required courses for Cs304",
+                "what courses needed for Comp304",
+                "what courses needed for Cs304",
+                "What is the requirement for Comp304",
+                "What is the requirement for Cs304"
+            ],
+            "responses": [
+                "You have to succeed in the Object-oriented programming (OOP) (Comp201) &  Linear Algebra and Geometry(1) (Math211)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs305",
+            "patterns": [
+                "What is the requirement to register the Design and Analysis of Algorithms course",
+                "What is the requirement to register Comp305",
+                "What is the requirement to register Cs305",
+                "How can I register Comp305",
+                "How can I register Cs305",
+                "what are the required courses for Comp305",
+                "what are the required courses for Cs305",
+                "what courses needed for Comp305",
+                "what courses needed for Cs305",
+                "What is the requirement for Comp305",
+                "What is the requirement for Cs305"
+            ],
+            "responses": [
+                "You have to succeed in the Data Structures and Algorithms course (Comp202)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs307",
+            "patterns": [
+                "What is the requirement to register the Database Management System course",
+                "What is the requirement to register Comp307",
+                "What is the requirement to register Cs307",
+                "How can I register Comp307",
+                "How can I register Cs307",
+                "what are the required courses for Comp307",
+                "what are the required courses for Cs307",
+                "what courses needed for Comp307",
+                "what courses needed for Cs307",
+                "What is the requirement for Comp307",
+                "What is the requirement for Cs307"
+            ],
+            "responses": [
+                "You have to succeed in the Data Structures and Algorithms course (Comp202)."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs309",
+            "patterns": [
+                "What is the requirement to register the  System Analysis course",
+                "What is the requirement to register Comp309",
+                "What is the requirement to register Cs309",
+                "How can I register Comp309",
+                "How can I register Cs309",
+                "what are the required courses for Comp309",
+                "what are the required courses for Cs309",
+                "what courses needed for Comp309",
+                "what courses needed for Cs309",
+                "What is the requirement for Comp309",
+                "What is the requirement for Cs309"
+            ],
+            "responses": [
+                "You have to succeed in the Object-oriented programming (OOP) course (Comp201)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math305",
+            "patterns": [
+                "What is the requirement to register the Logic and Boolean algebra (1) course",
+                "What is the requirement to register Math305",
+                "What is the requirement to register R305",
+                "How can I register Math305",
+                "How can I register R305",
+                "what are the required courses for Math305",
+                "what are the required courses for R305",
+                "what courses needed for Math305",
+                "what courses needed for R305",
+                "What is the requirement for Math305",
+                "What is the requirement for R305"
+            ],
+            "responses": [
+                "There is no  requirement for this course"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math351",
+            "patterns": [
+                "What is the requirement to register the Numerical analysis (1) course",
+                "What is the requirement to register Math351",
+                "What is the requirement to register R351",
+                "How can I register Math351",
+                "How can I register R351",
+                "what are the required courses for Math351",
+                "what are the required courses for R351",
+                "what courses needed for Math351",
+                "what courses needed for R351",
+                "What is the requirement for Math351",
+                "What is the requirement for R351"
+            ],
+            "responses": [
+                "You have to succeed in the Differential equation course (Math241)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math355",
+            "patterns": [
+                "What is the requirement to register the Approximation theory(1) course",
+                "What is the requirement to register Math355",
+                "What is the requirement to register R355",
+                "How can I register Math355",
+                "How can I register R355",
+                "what are the required courses for Math355",
+                "what are the required courses for R355",
+                "what courses needed for Math355",
+                "what courses needed for R355",
+                "What is the requirement for Math355",
+                "What is the requirement for R355"
+            ],
+            "responses": [
+                "You have to succeed in the Principles of Mathematical Analysis course (Math232)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math361",
+            "patterns": [
+                "What is the requirement to register Math361",
+                "What is the requirement to register R361",
+                "How can I register Math361",
+                "How can I register R361",
+                "what are the required courses for Math361",
+                "what are the required courses for R361",
+                "what courses needed for Math361",
+                "what courses needed for R361",
+                "What is the requirement for Math361",
+                "What is the requirement for R361"
+            ],
+            "responses": [
+                "You have to succeed in the Differential equation course (Math241)."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs316",
+            "patterns": [
+                "What is the requirement to register the file organization course",
+                "What is the requirement to register Comp316",
+                "What is the requirement to register Cs316",
+                "How can I register Comp316",
+                "How can I register Cs316",
+                "what are the required courses for Comp316",
+                "what are the required courses for Cs316",
+                "what courses needed for Comp316",
+                "what courses needed for Cs316",
+                "What is the requirement for Comp316",
+                "What is the requirement for Cs316"
+            ],
+            "responses": [
+                "You have to succeed in the (Comp101) course"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs303",
+            "patterns": [
+                "What is the requirement to register the Software development course",
+                "What is the requirement to register Comp303",
+                "What is the requirement to register Cs303",
+                "How can I register Comp303",
+                "How can I register Cs303",
+                "what are the required courses for Comp303",
+                "what are the required courses for Cs303",
+                "what courses needed for Comp303",
+                "what courses needed for Cs303",
+                "What is the requirement for Comp303",
+                "What is the requirement for Cs303"
+            ],
+            "responses": [
+                "You have to succeed in the Object-oriented programming (OOP) course (Comp201)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs306",
+            "patterns": [
+                "What is the requirement to register the Operating System course",
+                "What is the requirement to register Comp306",
+                "What is the requirement to register Cs306",
+                "How can I register Comp306",
+                "How can I register Cs306",
+                "what are the required courses for Comp306",
+                "what are the required courses for Cs306",
+                "what courses needed for Comp306",
+                "what courses needed for Cs306",
+                "What is the requirement for Comp306",
+                "What is the requirement for Cs306"
+            ],
+            "responses": [
+                "You have to succeed in the Object-oriented programming (OOP) course (Comp201)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs308",
+            "patterns": [
+                "What is the requirement to register the Database Design course",
+                "What is the requirement to register Comp308",
+                "What is the requirement to register Cs308",
+                "How can I register Comp308",
+                "How can I register Cs308",
+                "what are the required courses for Comp308",
+                "what are the required courses for Cs308",
+                "what courses needed for Comp308",
+                "what courses needed for Cs308",
+                "What is the requirement for Comp308",
+                "What is the requirement for Cs308"
+            ],
+            "responses": [
+                "You have to succeed in the Database Management System course (Comp307)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math306",
+            "patterns": [
+                "What is the requirement to register the Logic and Boolean algebra (2) course",
+                "What is the requirement to register Math306",
+                "What is the requirement to register R306",
+                "How can I register Math306",
+                "How can I register R306",
+                "what are the required courses for Math306",
+                "what are the required courses for R306",
+                "what courses needed for Math306",
+                "what courses needed for R306",
+                "What is the requirement for Math306",
+                "What is the requirement for R306"
+            ],
+            "responses": [
+                "You have to succeed in the  Logic and Boolean algebra (1) course (Math305)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math352",
+            "patterns": [
+                "What is the requirement to register the Numerical analysis (2) course",
+                "What is the requirement to register Math352",
+                "What is the requirement to register R352",
+                "How can I register Math352",
+                "How can I register R352",
+                "what are the required courses for Math352",
+                "what are the required courses for R352",
+                "what courses needed for Math352",
+                "what courses needed for R352",
+                "What is the requirement for Math352",
+                "What is the requirement for R352"
+            ],
+            "responses": [
+                "You have to succeed in the Numerical analysis (1) course (Math351)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math356",
+            "patterns": [
+                "What is the requirement to register the Approximation theory(2) course",
+                "What is the requirement to register Math356",
+                "What is the requirement to register R356",
+                "How can I register Math356",
+                "How can I register R356",
+                "what are the required courses for Math356",
+                "what are the required courses for R356",
+                "what courses needed for Math356",
+                "what courses needed for R356",
+                "What is the requirement for Math356",
+                "What is the requirement for R356"
+            ],
+            "responses": [
+                "You have to succeed in the  Approximation theory(1) course (Math355)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math362",
+            "patterns": [
+                "What is the requirement to register Math362",
+                "What is the requirement to register R362",
+                "How can I register Math362",
+                "How can I register R362",
+                "what are the required courses for Math362",
+                "what are the required courses for R362",
+                "what courses needed for Math362",
+                "what courses needed for R362",
+                "What is the requirement for Math362",
+                "What is the requirement for R362"
+            ],
+            "responses": [
+                "You have to succeed in the  Approximation theory(1) course (Math362)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs317",
+            "patterns": [
+                "What is the requirement to register the  Distributed Systems course",
+                "What is the requirement to register Comp317",
+                "What is the requirement to register Cs317",
+                "How can I register Comp317",
+                "How can I register Cs317",
+                "what are the required courses for Comp317",
+                "what are the required courses for Cs317",
+                "what courses needed for Comp317",
+                "what courses needed for Cs317",
+                "What is the requirement for Comp317",
+                "What is the requirement for Cs317"
+            ],
+            "responses": [
+                "You have to succeed in the Object-oriented programming (OOP) course (Comp201)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math481",
+            "patterns": [
+                "What is the requirement to register Optimal control theory course ",
+                "What is the requirement to register Math481",
+                "What is the requirement to register R481",
+                "How can I register Math481",
+                "How can I register R481",
+                "what are the required courses for Math481",
+                "what are the required courses for R481",
+                "what courses needed for Math481",
+                "what courses needed for R481",
+                "What is the requirement for Math481",
+                "What is the requirement for R481"
+            ],
+            "responses": [
+                "You have to succeed in Differential equations and Differentiation integration & analytical engineering 3 (Math 241)+ (Math 231)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math482",
+            "patterns": [
+                "What is the requirement to register Optimal control theory 2 course ",
+                "What is the requirement to register Math482",
+                "What is the requirement to register R482",
+                "How can I register Math482",
+                "How can I register R482",
+                "what are the required courses for Math482",
+                "what are the required courses for R482",
+                "what courses needed for Math482",
+                "what courses needed for R482",
+                "What is the requirement for Math482",
+                "What is the requirement for R482"
+            ],
+            "responses": [
+                "You have to succeed in Optimal control theory (MATH481)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math442",
+            "patterns": [
+                "What is the requirement to register partial differential equations 2 course ",
+                "What is the requirement to register Math442",
+                "What is the requirement to register R442",
+                "How can I register Math442",
+                "How can I register R442",
+                "what are the required courses for Math442",
+                "what are the required courses for R442",
+                "what courses needed for Math442",
+                "what courses needed for R442",
+                "What is the requirement for Math442",
+                "What is the requirement for R442"
+            ],
+            "responses": [
+                "You have to succeed in partial differential equations 1 (MATH 441)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Math441",
+            "patterns": [
+                "What is the requirement to register partial differential equations part 1 course ",
+                "What is the requirement to register Math441",
+                "What is the requirement to register R441",
+                "How can I register Math441",
+                "How can I register R441",
+                "what are the required courses for Math441",
+                "what are the required courses for R441",
+                "what courses needed for Math441",
+                "what courses needed for R441",
+                "What is the requirement for Math441",
+                "What is the requirement for R441"
+            ],
+            "responses": [
+                "You have to succeed in Mathematical Analysis(Math232)& Differential Equations (Math 241) courses."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs401",
+            "patterns": [
+                "What is the requirement to register networks course ",
+                "What is the requirement to register Comp401",
+                "What is the requirement to register Cs401",
+                "How can I register Comp401",
+                "How can I register Cs401",
+                "what are the required courses for Comp401",
+                "what are the required courses for Cs401",
+                "what courses needed for Comp401",
+                "what courses needed for Cs401",
+                "What is the requirement for Comp401",
+                "What is the requirement for Cs401"
+            ],
+            "responses": [
+                "You have to succeed in operating system course (Comp306)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs403",
+            "patterns": [
+                "What is the requirement to register Formal Languages and Automata  course ",
+                "What is the requirement to register Comp403",
+                "What is the requirement to register Cs403",
+                "How can I register Comp403",
+                "How can I register Cs403",
+                "what are the required courses for Comp403",
+                "what are the required courses for Cs403",
+                "what courses needed for Comp403",
+                "what courses needed for Cs403",
+                "What is the requirement for Comp403",
+                "What is the requirement for Cs403"
+            ],
+            "responses": [
+                "You have to succeed in Design and Analysis of Algorithms course (Comp305)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs406",
+            "patterns": [
+                "What is the requirement to register Simulation course ",
+                "What is the requirement to register Comp406",
+                "What is the requirement to register Cs406",
+                "How can I register Comp406",
+                "How can I register Cs406",
+                "what are the required courses for Comp406",
+                "what are the required courses for Cs406",
+                "what courses needed for Comp406",
+                "what courses needed for Cs406",
+                "What is the requirement for Comp406",
+                "What is the requirement for Cs406"
+            ],
+            "responses": [
+                "You have to succeed in Introduction to Probability theory(Math 201) &  Design and Analysis of Algorithms (Comp 305)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs426",
+            "patterns": [
+                "What is the requirement to register Selected topics for computer science 1 course ",
+                "What is the requirement to register Comp426",
+                "What is the requirement to register Cs426",
+                "How can I register Comp426",
+                "How can I register Cs426",
+                "what are the required courses for Comp426",
+                "what are the required courses for Cs426",
+                "what courses needed for Comp426",
+                "what courses needed for Cs426",
+                "What is the requirement for Comp426",
+                "What is the requirement for Cs426"
+            ],
+            "responses": [
+                "You have to ask the doctor of this course"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs428",
+            "patterns": [
+                "What is the requirement to register Selected topics for computer science 2 course ",
+                "What is the requirement to register Comp428",
+                "What is the requirement to register Cs428",
+                "How can I register Comp428",
+                "How can I register Cs428",
+                "what are the required courses for Comp428",
+                "what are the required courses for Cs428",
+                "what courses needed for Comp428",
+                "what courses needed for Cs428",
+                "What is the requirement for Comp428",
+                "What is the requirement for Cs428"
+            ],
+            "responses": [
+                "You have to ask the doctor of this course"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs490",
+            "patterns": [
+                "What is the requirement to register the graduation project ",
+                "What is the requirement to register Comp490",
+                "What is the requirement to register Cs490",
+                "How can I register Comp490",
+                "How can I register Cs490",
+                "what are the required courses for Comp490",
+                "what are the required courses for Cs490",
+                "what courses needed for Comp490",
+                "what courses needed for Cs490",
+                "What is the requirement for Comp490",
+                "What is the requirement for Cs490"
+            ],
+            "responses": [
+                "You have to be level 4"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs427",
+            "patterns": [
+                "What is the requirement to register  Selected programming languages course",
+                "What is the requirement to register Comp427",
+                "What is the requirement to register Cs427",
+                "How can I register Comp427",
+                "How can I register Cs427",
+                "what are the required courses for Comp427",
+                "what are the required courses for Cs427",
+                "what courses needed for Comp427",
+                "what courses needed for Cs427",
+                "What is the requirement for Comp427",
+                "What is the requirement for Cs427"
+            ],
+            "responses": [
+                "You have to ask the doctor of this course"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs408",
+            "patterns": [
+                "What is the requirement to register artificial intelligence course ",
+                "What is the requirement to register Comp408",
+                "What is the requirement to register Cs408",
+                "How can I register Comp408",
+                "How can I register Cs408",
+                "what are the required courses for Comp408",
+                "what are the required courses for Cs408",
+                "what courses needed for Comp408",
+                "what courses needed for Cs408",
+                "What is the requirement for Comp408",
+                "What is the requirement for Cs408"
+            ],
+            "responses": [
+                "You have to succeed in Design and Analysis of Algorithms course (Comp305)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs407",
+            "patterns": [
+                "What is the requirement to register Design programming languages course ",
+                "What is the requirement to register Comp407",
+                "What is the requirement to register Cs407",
+                "How can I register Comp407",
+                "How can I register Cs407",
+                "what are the required courses for Comp407",
+                "what are the required courses for Cs407",
+                "what courses needed for Comp407",
+                "what courses needed for Cs407",
+                "What is the requirement for Comp407",
+                "What is the requirement for Cs407"
+            ],
+            "responses": [
+                "You have to succeed in Formal Languages and Automata(Comp403)"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Cs402",
+            "patterns": [
+                "What is the requirement to register Encryption theory course ",
+                "What is the requirement to register Comp402",
+                "What is the requirement to register Cs402",
+                "How can I register Comp402",
+                "How can I register Cs402",
+                "what are the required courses for Comp402",
+                "what are the required courses for Cs402",
+                "what courses needed for Comp402",
+                "what courses needed for Cs402",
+                "What is the requirement for Comp402",
+                "What is the requirement for Cs402"
+            ],
+            "responses": [
+                "You have to succeed in Design and Analysis of Algorithms course (Comp305) & introduction to probability theory (MATH 201) & discrete mathematics (MATH 213)"
+            ],
+            "context_set": ""
+        }
+    ]
+}
